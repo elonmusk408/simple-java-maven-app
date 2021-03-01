@@ -13,7 +13,7 @@ pipeline{
                           scanner()
 }
 }
-			 stage ('Sonar') {
+			 stage ('Sonar-Qualitygate') {
                     steps {
                         testsonar()	
 		    }	           
