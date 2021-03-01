@@ -6,15 +6,7 @@ pipeline{
 
       agent any
         
-        stages{
-
-              stage('maven build'){
-                  steps{
-                      script{
-		    	                sh "mvn clean install"
-                      	  }
-               	     }  
-                 }	
+        stages{	
                  
             stage('sonar-scanner') {
                        steps {
